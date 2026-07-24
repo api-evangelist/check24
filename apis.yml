@@ -1,7 +1,18 @@
 aid: check24
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/check24.png
 name: Check24
-description: 'Check24 is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: "CHECK24 is Germany's largest online comparison portal (Vergleichsportal), founded in 1999 and headquartered in Munich. It lets more than 20 million customers compare prices and switch providers across over 50 categories, including car, life and health insurance, loans and bank accounts, electricity and gas, DSL and mobile tariffs, travel, rental cars, and online shopping. CHECK24 runs its own comparison calculators and a licensed bank (CHECK24 Bank), and integrates partner providers such as Allianz Direct through API-based connections. Backed by Accel, it is profiled in the API Evangelist network as a consumer company. CHECK24 maintains a verified GitHub organization and a GenDev developer scholarship program but publishes no public developer API."
 url: https://raw.githubusercontent.com/api-evangelist/check24/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +22,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Comparison
+- Insurance
+- Fintech
+- Marketplace
+- Price Comparison
+- Germany
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +39,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/check24-domain-security.yml
 - type: Website
-  url: http://www.check24.de
+  url: https://www.check24.de
+- type: GitHubOrganization
+  url: https://github.com/CHECK24
+- type: Support
+  url: https://www.check24.de/unternehmen/kontakt/
+- type: PrivacyPolicy
+  url: https://www.check24.de/popup/datenschutz-check24-gmbh/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
